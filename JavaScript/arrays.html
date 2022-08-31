@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h2>JavaScript - Arrays</h2>
+<p>O objeto Array é usado para armazenar vários valores em uma
+única variável: :</p>
+<p id="demo"></p>
+<script>
+const cars = ["Gol", "HB20", "Tiggo"];
+document.getElementById("demo").innerHTML = cars;
+
+
+// Validação dos valores inseridos dentro da variável matriz
+var carros = [ "HB20", "Sandero", "Gol", "Onix" ];
+document.getElementById("demo").innerHTML = carros;
+
+//A melhor maneira de listar, percorrer um Array é usando um loop como por exemplo
+//o "for":
+// Declaração das variáveis
+var carros, text, cLen, i;
+carros = ["Uno", "Gol", "Ka", "HB20"]; 
+// Identificação dos registros na variável
+cLen = carros.length; text = "<ul>";
+//# Loop de repetição do processo
+
+for (i = 0; i < cLen; i++)
+{
+text += "<li>" + carros[i] + "</li>";
+}
+
+</script>
+</body>
+</html>

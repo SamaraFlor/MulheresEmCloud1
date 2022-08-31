@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+
+	
+	<title>Samara Flor</title>
+</head>
+<body>
+	<header>
+		<div>
+			<h1>Mulheres em Cloud</h1>
+		</div>
+		<ul>
+			<li>
+				<a target="_blank" href="https://github.com/SamaraFlor">Github</a>
+			</li>
+			<li>
+				<a target="_blank" href="s.samaraflor2021@gmail.com">Email</a>
+			</li>
+			<li>
+				<a target="_blank" href="https://www.linkedin.com/in/samara-flor/">Linkedin</a>
+			</li>
+		</ul>
+	</header>
+	<main>
+		<section class="container">
+			<div class="name">
+				<h1>Samara Flor</h1>
+				<h5>Full-Stack Developer</h5>
+			</div>
+
+			<div onclick="displayAbout()" id="arrow">
+				<i id="animation" class="fas fa-gem"></i>
+			</div>
+
+			<div style="display: none" id="about">
+				<p>
+					Eu trabalho com  Java, Springboot,Javascript,Angular<br> 
+                    Estou aprendendo....cloud e dados<br>
+				</p>
+			</div>
+
+			<div class="form">
+				<div>
+					<p>Deixe o seu Contato</p>
+				</div>
+
+				<form action="">
+					<input type="text" placeholder=" Email ">
+					<button> Enviar </button>
+				</form>
+			</div>
+		</section>
+	</main>
+
+	<script>
+		function displayAbout()
+		{
+			var arrow = document.getElementById('animation');
+			arrow.classList.toggle('rotate');
+			
+			var display = document.getElementById('about');
+			display.classList.toggle('active');
+		}
+	</script>
+
+</body>
+</html>

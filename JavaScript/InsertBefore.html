@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+<ul>
+ <li>primeiro item</li>
+ <li>segundo item</li>
+ <li>quarto item</li>
+</ul>
+<script>
+// Criando o terceiro elemento
+var novoElem = document.createElement('li');
+var texto = document.createTextNode('terceiro item');
+novoElem.appendChild(texto);
+// Recuperando a lista
+var lista = document.getElementsByTagName('ul')[0];
+// Recuperando os itens
+var itens = document.getElementsByTagName('li');
+// Inserindo com insertBefore()
+lista.insertBefore(novoElem, itens[0]);
+</script>
+</body>

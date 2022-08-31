@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<style>
+.test {
+ background-color: yellow;
+}
+</style>
+<body style="font-size:20px;height:1500px">
+<h1>O evento onscroll </h1>
+<p id="myP" style="position:fixed">
+ Se você rolar 50 pixels do topo desta página, a classe "teste" será adicionada. Role
+para cima novamente para remover a classe.
+</p>
+<script>
+// Capturando o evento scroll com a função
+window.onscroll = function() {myFunction()};
+function myFunction() {
+ if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+ document.getElementById("myP").className = "test";
+ } else {
+ document.getElementById("myP").className = "";
+ }
+}
+</script>
+</body>
+</html>

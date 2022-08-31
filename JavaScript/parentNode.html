@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang=“pt-br”>
+ <head>
+ <title>Curso de Javascript</title>
+ <meta charset=“UTF-8”>
+ <script>
+
+ function primeiroElemento(){
+ var elemento=document.getElementById("item1").parentNode.nodeName;
+ alert(elemento);
+ }
+
+ </script>
+ </head>
+ <body>
+
+ <ul id="info">
+ <li id="item1">Monitor</li>
+ <li id="item2">Mouse</li>
+ <li id="item3">Teclado</li>
+ <li id="item4">Impressora</li>
+ </ul>
+
+ <button onclick="primeiroElemento()">Elemento Pai</button>
+ </body>
+</html>
